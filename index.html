@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin Panel</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2 class="logo">DASHBOARD</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Statistics</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Workflow</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Navigation -->
+            <header class="top-nav">
+                <input type="text" placeholder="Search...">
+                <div class="user-info">
+                    <span>Roeurng Phearet</span>
+                    <img src="./image/photo_2.jpg" alt="User Icon">
+                </div>
+            </header>
+
+            <!-- Dashboard Cards -->
+            <section class="cards">
+                <div class="card">
+                    <h3>Total Traffic</h3>
+                    <p>2,586,364</p>
+                </div>
+                <div class="card">
+                    <h3>Subscribers</h3>
+                    <p>2,586,364</p>
+                </div>
+                <div class="card">
+                    <h3>Activity</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </section>
+
+            <!-- Dashboard Charts -->
+            <section class="charts">
+                <div class="chart" id="lineChart">
+                    <h3>Statistics</h3>
+                    <canvas id="statisticsChart"></canvas>
+                </div>
+                <div class="chart" id="pieChart">
+                    <h3>Chart</h3>
+                    <canvas id="activityChart"></canvas>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

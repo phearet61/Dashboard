@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Brand Logo</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login/Register</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="user-profile" onclick="toggleDropdown()">
+            <span>User Icon</span>
+            <div class="dropdown" id="userDropdown">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </header>
+ <!-- Hero Section -->
+ <section class="hero">
+    <div class="hero-content">
+        <h1>Manage Your Data Effortlessly</h1>
+        <p>Experience the power of streamlined data management with our innovative dashboard.</p>
+        <button class="cta-button">Get Started</button>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <h2>Key Features</h2>
+    <div class="feature-grid">
+        <div class="feature">
+            <img src="user-management-icon.png" alt="User Management">
+            <h3>User Management</h3>
+            <p>Easily manage user roles and permissions.</p>
+        </div>
+        <div class="feature">
+            <img src="data-analytics-icon.png" alt="Data Analytics">
+            <h3>Data Analytics</h3>
+            <p>Gain insights with powerful data analytics tools.</p>
+        </div>
+        <div class="feature">
+            <img src="customizable-dashboard-icon.png" alt="Customizable Dashboard">
+            <h3>Customizable Dashboard</h3>
+            <p>Personalize your dashboard to fit your needs.</p>
+        </div>
+        <div class="feature">
+            <img src="notifications-icon.png" alt="Notifications">
+            <h3>Notifications & Alerts</h3>
+            <p>Stay updated with real-time notifications.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="benefits-left">
+        <h2>Benefits</h2>
+        <ul>
+            <li>Increased productivity</li>
+            <li>Enhanced data security</li>
+            <li>Improved decision-making</li>
+            <li>24/7 support</li>
+        </ul>
+    </div>
+    <div class="benefits-right">
+        <h2>What Our Users Say</h2>
+        <p>"This dashboard has transformed the way we manage our data. It's intuitive and powerful!" - Happy User</p>
+    </div>
+</section>
+
+<!-- Demo Section -->
+<section class="demo">
+    <h2>See It in Action</h2>
+    <video controls>
+        <source src="demo-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <button class="cta-button">Try It Now</button>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-table">
+        <div class="pricing-plan">
+            <h3>Basic</h3>
+            <p>$10/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <button class="cta-button">Choose Plan</button>
+        </div>
+        <div class="pricing-plan">
+            <h3>Pro</h3>
+            <p>$20/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+            </ul>
+            <button class="cta-button">Choose Plan</button>
+        </div>
+        <div class="pricing-plan">
+            <h3>Enterprise</h3>
+            <p>$30/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+                <li>Feature 5</li>
+            </ul>
+            <button class="cta-button">Choose Plan</button>
+        </div>
+    </div>
+</section>
+
+<!-- FAQs Section -->
+<section class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">What is included in the dashboard?</h3>
+        <p class="faq-answer">The dashboard includes user management, data analytics, and customizable features.</p>
+    </div>
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">Is there a free trial available?</h3>
+        <p class="faq-answer">Yes, we offer a 14-day free trial for new users.</p>
+    </div>
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ(this)">How can I contact support?</h3>
+        <p class="faq-answer">You can reach our support team via email or through the live chat feature on our website.</p>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>User Reviews</h2>
+    <div class="testimonial-carousel">
+        <div class="testimonial">
+            <p>"Great product, highly recommend!" - User 1</p>
+        </div>
+        <div class="testimonial">
+            <p>"The best dashboard I've ever used!" - User 2</p>
+        </div>
+        <div class="testimonial">
+            <p>"Fantastic support and features." - User 3</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    <div class="social-media">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

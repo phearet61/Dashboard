@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">YourLogo</div>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#users">User Profiles</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-bar">
+        </div>
+        <select class="language-selector" id="languageSelector">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <!-- Add more languages as needed -->
+        </select>
+        <div class="icons">
+            <div class="notification-icon" id="notificationIcon" title="Notifications">🔔</div>
+            <div class="messages-icon" id="messagesIcon" title="Messages">💬</div>
+        </div>
+    </header>
+     <!-- Hero Section -->
+     <header class="hero">
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Manage your users, track performance, and access tools seamlessly.</p>
+        <a href="#dashboard" class="cta-button">Get Started</a>
+    </header>
+
+    <!-- User Profile Section -->
+    <section class="user-profile">
+        <div class="profile-overview">
+            <img src="./image/user.jpg" alt="User Profile Picture" class="profile-pic">
+            <div class="profile-info">
+                <h2>John Doe</h2>
+                <p>Administrator</p>
+            </div>
+        </div>
+        <div class="profile-buttons">
+            <button id="editProfile" class="button">Edit Profile</button>
+            <button id="settings" class="button">Settings</button>
+        </div>
+    </section>
+
+    <!-- Sidebar Menu Section -->
+    <aside class="sidebar">
+        <h3>Menu</h3>
+        <ul>
+            <li><i class="icon">👥</i> User Management</li>
+            <li><i class="icon">📊</i> Analytics</li>
+            <li><i class="icon">🔔</i> Notifications</li>
+            <li><i class="icon">⚙️</i> Settings</li>
+            <li><i class="icon">❓</i> Help/Support</li>
+        </ul>
+    </aside>
+
+    <!-- Main Dashboard Section -->
+    <main class="dashboard">
+        <h2>Dashboard</h2>
+        <div class="widgets">
+            <div class="widget">User Growth: 150%</div>
+            <div class="widget">Activity Logs: 320</div>
+            <div class="widget">Performance Score: 88/100</div>
+        </div>
+        <div class="charts">
+            <div class="chart">[Graph/Chart Placeholder]</div>
+        </div>
+    </main>
+
+    <!-- Web Apps Section -->
+    <section class="web-apps">
+        <h2>Your Tools at a Glance</h2>
+        <div class="card-container">
+            <div class="card">Email</div>
+            <div class="card">Contacts</div>
+            <div class="card">Voice</div>
+        </div>
+    </section>
+
+    <!-- Messages Section -->
+    <section class="messages">
+        <h2>Recent Messages</h2>
+        <ul class="message-list">
+            <li>John: "Meeting at 3 PM."</li>
+            <li>Jane: "Please send the report."</li>
+            <li>Mike: "Can we reschedule?"</li>
+        </ul>
+        <button class="button">View All Messages</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+        </div>
+        <div class="contact-info">
+            <p>Support: support@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#">ہوم</a></li>
+                <li><a href="#">ڈیش بورڈ</a></li>
+                <li><a href="#">صارفین</a></li>
+                <li><a href="#">سیٹنگز</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="hi">kora</option>
+                <option value="ur">اردو</option>
+            </select>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...." id="search">
+            <button onclick="performSearch()">🔍</button>
+        </div>
+    </header>
+    <main>
+        <section class="dashboard-overview">
+            <h1>خوش آدمدی</h1>
+            <div class="user-profile-summary">
+                <div class="profile-card">
+                    <h2>صارف کی معلومات</h2>
+                    <p><strong>نام:</strong> علی احمد</p>
+                    <p><strong>Email</strong> ali.ahmed@example.com</p>
+                    <p><strong>phone:</strong> +92 300 1234567</p>
+                    <button onclick="editProfile()">پروفائل ایڈٹ کریں</button>
+                </div>
+            </div>
+            <div class="statistics-section">
+                <div class="card">
+                    <h2>مجموع صارفین</h2>
+                    <p id="total-users">1200</p>
+                </div>
+                <div class="card">
+                    <h2>فعال صارفین</h2>
+                    <p id="active-users">800</p>
+                </div>
+                <div class="card">
+                    <h2>آرڈر</h2>
+                    <p id="total-orders">250</p>
+                </div>
+                <div class="card">
+                    <h2>آمدنی</h2>
+                    <p id="revenue">$15,000</p>
+                </div>
+            </div>
+            <div class="charts">
+                <canvas id="barChart" width="400" height="200"></canvas>
+                <canvas id="pieChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
